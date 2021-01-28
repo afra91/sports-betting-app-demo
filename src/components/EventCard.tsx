@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import Skeleton from '@material-ui/lab/Skeleton';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -17,6 +18,14 @@ const useStyles = makeStyles((theme: Theme) =>
       alignSelf: 'flex-start',
       margin: theme.spacing(2),
     },
+    buttonContainer: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+    },
+    button: {
+      marginBottom: theme.spacing(1),
+    }
   }),
 );
 
@@ -53,11 +62,25 @@ export default function EventCard(props: EventCardProps) {
             "To win"
             }
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <div className={classes.buttonContainer}>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+            </div>
+            <Typography variant="h6" color="textSecondary" component="h2">
             {
-            "Why First Minister of Scotland Nicola Sturgeon thinks GDP is the wrong measure of a country's success:"
+            "To win"
             }
             </Typography>
+            <div className={classes.buttonContainer}>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+              <Button className={classes.button} variant="contained">Default</Button>
+            </div>
           </React.Fragment>
         )}
       </CardContent>
