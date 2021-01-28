@@ -3,6 +3,7 @@ import { Container } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import PrimaryAppBar from './components/PrimaryAppBar';
 import EventCard from './components/EventCard';
+import FullScreenDialog from './components/FullScreenDialog';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -26,6 +27,7 @@ function App() {
           <EventCard />
           <EventCard />
         </Container>
+        <FullScreenDialog />
       </React.Fragment>
   );
 }
